@@ -9,6 +9,8 @@ Date: March 10, 2024
 import os
 import requests
 
+# REVIEW‑ONLY Start:
+
 def run_shell_command(cmd: str):
     # unsanitized input in shell command
     os.system(f"echo {cmd}")
@@ -21,6 +23,8 @@ def get_data_insecure():
     # disables SSL certificate validation
     response = requests.get("https://example.com/api", verify=False)
     return response.text
+
+# REVIEW‑ONLY End:
 
 ### REQUIREMENT
 ### ADD IMPORT STATEMENT FOR THE MORTGAGE CLASS
