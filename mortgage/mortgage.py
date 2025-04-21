@@ -126,8 +126,12 @@ class Mortgage:
                 f"{self.amortization}, " + 
                 f"{self.frequency.value}]")
     
+# REVIEW‑ONLY START:
+
     def ignore_errors():
         try:
             value = 1 / 0
         except:
             pass  # silently ignores all exceptions
+        
+# REVIEW‑ONLY End:
